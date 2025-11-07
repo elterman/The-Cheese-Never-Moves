@@ -77,10 +77,6 @@
         font-size: 38px;
     }
 
-    .subtitle {
-        font-size: 30px;
-    }
-
     .content {
         grid-area: 2/1;
         font-size: 22px;

@@ -1,6 +1,6 @@
 <script>
     import Cookie from '$lib/images/Cookie.webp';
-    import Toast from '$lib/images/Toast.webp';
+    import Hmm from '$lib/images/Hmm.webp';
     import Flag from '$lib/images/Flag.webp';
     import Frame from '$lib/images/Frame.webp';
     import GamePage from '../Game Page.svelte';
@@ -59,8 +59,8 @@
             <img class="frame" src={Frame} alt="" />
             {#if ss.intro}
                 <img class="flag" src={Flag} alt="" width={400} transition:fade={{ duration: 100 }} />
-                <img class="coin" src={Cookie} alt="" width={120} transition:fade={{ duration: 100 }} />
-                <img class="death" src={Toast} alt="" width={200} transition:fade={{ duration: 100 }} />
+                <img class="coin" src={Cookie} alt="" width={110} transition:fade={{ duration: 100 }} />
+                <img class="death" src={Hmm} alt="" width={120} transition:fade={{ duration: 100 }} />
             {/if}
             <GamePage />
             <Intro />
@@ -172,11 +172,7 @@
         touch-action: none;
         justify-self: end;
         filter: drop-shadow(0 0 10px black);
-        /* transform: translate(45%, -45%); */
-        /* clip-path: inset(45% 45% 0 0); */
-        transform: translate(0%, 0%);
-        clip-path: inset(0% 0% 0 0);
-        margin: 4% 4% 0 0;
+        margin: 5% 5% 0 0;
     }
 
     .death {
@@ -184,8 +180,7 @@
         touch-action: none;
         align-self: end;
         filter: drop-shadow(0 0 10px black);
-        transform: translate(-35%, 35%);
-        clip-path: inset(0 0 35% 35%);
+        margin: 0 0 6% 4%;
     }
 
     .disclaimer {
