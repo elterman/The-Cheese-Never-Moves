@@ -51,7 +51,7 @@
             <!-- eslint-disable-next-line svelte/no-at-html-tags -->
             {@html CONTENT}
         </div>
-        <div class="buttons">
+        <div class="buttons {resume ? 'resume' : ''}">
             <PromptPanel ops={[{ label, style: `font-size: ${resume ? 28 : 36}px;`, onClick }]} />
         </div>
     </div>
@@ -88,6 +88,10 @@
 
     .buttons {
         grid-area: 3/1;
-        place-self: center;
+        justify-self: center;
+    }
+
+    .resume {
+        justify-self: end;
     }
 </style>
