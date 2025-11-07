@@ -59,7 +59,7 @@
             <img class="frame" src={Frame} alt="" />
             {#if ss.intro}
                 <img class="flag" src={Flag} alt="" width={400} transition:fade={{ duration: 100 }} />
-                <img class="coin" src={Cookie} alt="" width={200} transition:fade={{ duration: 100 }} />
+                <img class="coin" src={Cookie} alt="" width={120} transition:fade={{ duration: 100 }} />
                 <img class="death" src={Toast} alt="" width={200} transition:fade={{ duration: 100 }} />
             {/if}
             <GamePage />
@@ -172,8 +172,11 @@
         touch-action: none;
         justify-self: end;
         filter: drop-shadow(0 0 10px black);
-        transform: translate(45%, -45%);
-        clip-path: inset(45% 45% 0 0);
+        /* transform: translate(45%, -45%); */
+        /* clip-path: inset(45% 45% 0 0); */
+        transform: translate(0%, 0%);
+        clip-path: inset(0% 0% 0 0);
+        margin: 4% 4% 0 0;
     }
 
     .death {
