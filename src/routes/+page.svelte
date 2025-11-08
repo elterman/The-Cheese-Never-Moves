@@ -1,7 +1,6 @@
 <script>
     import Cheese from '$lib/images/Cheese.webp';
     import Think from '$lib/images/Think.webp';
-    import Trap from '$lib/images/Trap Intro.webp';
     import Frame from '$lib/images/Frame.webp';
     import GamePage from '../Game Page.svelte';
     import Intro from '../Intro.svelte';
@@ -58,7 +57,6 @@
         <div class="content" style="scale: {scale};">
             <img class="frame" src={Frame} alt="" />
             {#if ss.intro}
-                <!-- <img class="trap" src={Trap} alt="" width={300} transition:fade={{ duration: 100 }} /> -->
                 <img class="cheese" src={Cheese} alt="" width={100} transition:fade={{ duration: 100 }} />
                 <img class="death" src={Think} alt="" width={110} transition:fade={{ duration: 100 }} />
             {/if}
