@@ -23,8 +23,8 @@
     const dim = $derived(ss.size + MIN_GAME_DIMENSION - 1);
     const width = $derived(BOARD_SIZE / dim);
     const flagSize = $derived(width / 1.8);
-    const coinSize = $derived(width / 1.7);
-    const trapSize = $derived(width / 1.9);
+    const coinSize = $derived(width / 1.4);
+    const trapSize = $derived(width / 1.2);
     const sel = $derived(ss.over && ss.selected && samePos(ss.selected, tile));
     let pressed = $state();
     let _this = $state();
@@ -100,6 +100,7 @@
     .tile {
         display: grid;
         box-sizing: border-box;
+        /* border: 1px solid #ffffff60; */
         padding: 2.3%;
         cursor: pointer;
         transition:
@@ -124,6 +125,7 @@
 
     .plate {
         grid-area: 1/1;
+        opacity: 1;
     }
 
     .pressed {
