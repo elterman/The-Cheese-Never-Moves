@@ -25,6 +25,6 @@
     }
 
     .lost {
-        color: var(--orange);
+        color: var(--red);
     }
 </style>
