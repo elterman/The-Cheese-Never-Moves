@@ -25,8 +25,8 @@
     const dim = $derived(ss.size + MIN_GAME_DIMENSION - 1);
     const width = $derived(BOARD_SIZE / dim);
     const sel = $derived(ss.over && ss.selected && samePos(ss.selected, tile));
-    const flagSize = $derived(width / 1.8);
-    const coinSize = $derived(width / 1.8);
+    const flagSize = $derived(width / 1.9);
+    const coinSize = $derived(width / 1.7);
     const trapSize = $derived(width / (sel && trap ? 1.2 : 1.5));
     let pressed = $state();
     let _this = $state();
